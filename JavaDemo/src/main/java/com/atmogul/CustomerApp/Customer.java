@@ -1,0 +1,73 @@
+package com.atmogul.CustomerApp;
+
+/**
+ * 实体对象
+ * 用来封装客户信息
+ */
+public class Customer {
+
+    private String name; // 客户姓名
+    private char gender; //性别
+    private int age; // 年龄
+    private String PHONE; // 电话号码
+    private String email; //电子邮箱
+
+    public Customer() {
+
+    }
+
+    public Customer(String name, char gender, int age, String PHONE, String email) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.PHONE = PHONE;
+        this.email = email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getPHONE() {
+        return PHONE;
+    }
+
+    public void setPHONE(String PHONE) {
+        this.PHONE = PHONE;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+//    public static void main(String[] args) {
+//        Customer customer = new Customer();
+//        int age = customer.getAge();
+//        System.out.println(age);
+//    }
+}
